@@ -36,6 +36,7 @@
             this.DgvCD = new System.Windows.Forms.DataGridView();
             this.tabTaiKhoan = new System.Windows.Forms.TabPage();
             this.tabCongTac = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabChucDanh.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvCD)).BeginInit();
@@ -51,26 +52,27 @@
             this.tabControl1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.ItemSize = new System.Drawing.Size(150, 40);
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1178, 620);
+            this.tabControl1.Size = new System.Drawing.Size(785, 403);
             this.tabControl1.TabIndex = 1;
             // 
             // tabChucDanh
             // 
             this.tabChucDanh.BackColor = System.Drawing.Color.Transparent;
             this.tabChucDanh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabChucDanh.Controls.Add(this.button1);
             this.tabChucDanh.Controls.Add(this.btnXoaCD);
             this.tabChucDanh.Controls.Add(this.btnSuaCD);
             this.tabChucDanh.Controls.Add(this.btnThemCD);
             this.tabChucDanh.Controls.Add(this.DgvCD);
             this.tabChucDanh.ForeColor = System.Drawing.Color.MidnightBlue;
             this.tabChucDanh.Location = new System.Drawing.Point(4, 44);
-            this.tabChucDanh.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tabChucDanh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabChucDanh.Name = "tabChucDanh";
-            this.tabChucDanh.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tabChucDanh.Size = new System.Drawing.Size(1170, 572);
+            this.tabChucDanh.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabChucDanh.Size = new System.Drawing.Size(777, 355);
             this.tabChucDanh.TabIndex = 0;
             this.tabChucDanh.Text = "Chức danh";
             this.tabChucDanh.Click += new System.EventHandler(this.tabChucDanh_Click);
@@ -79,9 +81,10 @@
             // 
             this.btnXoaCD.BackColor = System.Drawing.Color.Crimson;
             this.btnXoaCD.ForeColor = System.Drawing.Color.Transparent;
-            this.btnXoaCD.Location = new System.Drawing.Point(704, 402);
+            this.btnXoaCD.Location = new System.Drawing.Point(469, 261);
+            this.btnXoaCD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnXoaCD.Name = "btnXoaCD";
-            this.btnXoaCD.Size = new System.Drawing.Size(182, 61);
+            this.btnXoaCD.Size = new System.Drawing.Size(121, 40);
             this.btnXoaCD.TabIndex = 3;
             this.btnXoaCD.Text = "Xóa";
             this.btnXoaCD.UseVisualStyleBackColor = false;
@@ -90,9 +93,10 @@
             // 
             this.btnSuaCD.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btnSuaCD.ForeColor = System.Drawing.Color.Transparent;
-            this.btnSuaCD.Location = new System.Drawing.Point(468, 402);
+            this.btnSuaCD.Location = new System.Drawing.Point(312, 261);
+            this.btnSuaCD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSuaCD.Name = "btnSuaCD";
-            this.btnSuaCD.Size = new System.Drawing.Size(182, 61);
+            this.btnSuaCD.Size = new System.Drawing.Size(121, 40);
             this.btnSuaCD.TabIndex = 2;
             this.btnSuaCD.Text = "Sửa";
             this.btnSuaCD.UseVisualStyleBackColor = false;
@@ -101,9 +105,10 @@
             // 
             this.btnThemCD.BackColor = System.Drawing.Color.Gold;
             this.btnThemCD.ForeColor = System.Drawing.Color.Transparent;
-            this.btnThemCD.Location = new System.Drawing.Point(209, 402);
+            this.btnThemCD.Location = new System.Drawing.Point(139, 261);
+            this.btnThemCD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnThemCD.Name = "btnThemCD";
-            this.btnThemCD.Size = new System.Drawing.Size(182, 61);
+            this.btnThemCD.Size = new System.Drawing.Size(121, 40);
             this.btnThemCD.TabIndex = 1;
             this.btnThemCD.Text = "Thêm";
             this.btnThemCD.UseVisualStyleBackColor = false;
@@ -114,21 +119,22 @@
             this.DgvCD.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.DgvCD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvCD.GridColor = System.Drawing.Color.LightSeaGreen;
-            this.DgvCD.Location = new System.Drawing.Point(77, 53);
+            this.DgvCD.Location = new System.Drawing.Point(51, 34);
+            this.DgvCD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DgvCD.Name = "DgvCD";
             this.DgvCD.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
             this.DgvCD.RowTemplate.Height = 28;
             this.DgvCD.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.DgvCD.Size = new System.Drawing.Size(1004, 288);
+            this.DgvCD.Size = new System.Drawing.Size(669, 187);
             this.DgvCD.TabIndex = 0;
             // 
             // tabTaiKhoan
             // 
             this.tabTaiKhoan.Location = new System.Drawing.Point(4, 44);
-            this.tabTaiKhoan.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tabTaiKhoan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabTaiKhoan.Name = "tabTaiKhoan";
-            this.tabTaiKhoan.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tabTaiKhoan.Size = new System.Drawing.Size(1170, 572);
+            this.tabTaiKhoan.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabTaiKhoan.Size = new System.Drawing.Size(777, 355);
             this.tabTaiKhoan.TabIndex = 1;
             this.tabTaiKhoan.Text = "Tai khoản";
             this.tabTaiKhoan.UseVisualStyleBackColor = true;
@@ -136,20 +142,31 @@
             // tabCongTac
             // 
             this.tabCongTac.Location = new System.Drawing.Point(4, 44);
+            this.tabCongTac.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabCongTac.Name = "tabCongTac";
-            this.tabCongTac.Padding = new System.Windows.Forms.Padding(3);
-            this.tabCongTac.Size = new System.Drawing.Size(1170, 572);
+            this.tabCongTac.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabCongTac.Size = new System.Drawing.Size(777, 355);
             this.tabCongTac.TabIndex = 2;
             this.tabCongTac.Text = "Công tác";
             this.tabCongTac.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(51, 274);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // HeThong
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1178, 620);
+            this.ClientSize = new System.Drawing.Size(785, 403);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "HeThong";
             this.Text = "HeThong";
             this.Load += new System.EventHandler(this.tabChucDanh_Click);
@@ -170,5 +187,6 @@
         private System.Windows.Forms.Button btnXoaCD;
         private System.Windows.Forms.Button btnSuaCD;
         private System.Windows.Forms.Button btnThemCD;
+        private System.Windows.Forms.Button button1;
     }
 }
