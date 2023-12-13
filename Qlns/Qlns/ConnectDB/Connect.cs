@@ -10,7 +10,7 @@ namespace Qlns.ConnectDB
 {
     internal class Connect
     {
-        string ConnectionStr = @"Data Source=DESKTOP-A4AQPRU\SQLEXPRESS;Initial Catalog=QLNS1;Persist Security Info=True;User ID=HaiAnhdeptrai;Password=1;TrustServerCertificate=True;";
+        string ConnectionStr = @"Data Source=DESKTOP-K13HRA7;Initial Catalog=QLNS;Persist Security Info=True;User ID=ha;Password=1;TrustServerCertificate=True;";
         public SqlConnection OpenConnection()
         {
             SqlConnection connection = new SqlConnection(ConnectionStr);
