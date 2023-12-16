@@ -36,6 +36,40 @@ namespace Qlns.DAL
             return ChucDanhList;
 
         }
+        public bool SuaChucDanh(int Id, string TenChucDanh)
+        {
+            try
+            {
+                using (SqlConnection ketnoi = Kn.OpenConnection())
+                {
+                    string query = "UPDATE ChucDanh SET TenChucDanh = @TenChucDanh WHERE Id = @Id;";
+                    using (SqlCommand command = new SqlCommand(query, ketnoi))
+                    {
+                        command.Parameters.AddWithValue("@Id", Id);
+                        command.Parameters.AddWithValue("@TenChucDanh", TenChucDanh);
+
+                        int rowsAffected = command.ExecuteNonQuery();
+
+                        // Check if any rows were affected
+                        if (rowsAffected > 0)
+                        {
+                            return true;
+                        }
+                        else
+                        {
+                            // No rows were affected, meaning the update did not succeed
+                            MessageBox.Show("Update failed. No rows were affected.");
+                            return false;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+                return false;
+            }
+        }
     }
-    }
+}
 

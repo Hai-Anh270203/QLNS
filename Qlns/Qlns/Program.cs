@@ -1,10 +1,10 @@
-﻿using Q;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WinFormsApp1;
+using Qlns;
 
 namespace Qlns
 {
@@ -18,7 +18,7 @@ namespace Qlns
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new dangnhap());
+            Application.Run(new HeThong());
         }
     }
 }

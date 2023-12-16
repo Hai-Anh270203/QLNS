@@ -70,6 +70,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SuaCD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuaCD.Designer.cs">
+      <DependentUpon>SuaCD.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThemCD.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SuaCD.resx">
+      <DependentUpon>SuaCD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ThemCD.resx">
       <DependentUpon>ThemCD.cs</DependentUpon>
     </EmbeddedResource>
